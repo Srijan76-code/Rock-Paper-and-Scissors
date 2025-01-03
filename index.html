@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper and Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Rock Paper and Scissors</h1>
+    </div>
+
+    <div class="container">
+
+
+
+        <div class="selection">
+            <div class="choices">
+                <div class="picked_choice" >Select any one</div>
+                <div class="right_border"></div>
+
+                <img class="choice_img" id="paper" src="./images/Paper.jpeg" alt="">
+                <img class="choice_img" id="rock" src="./images/Rock.jpeg" alt="">
+                <img class="choice_img" id="scissors" src="./images/Scissors.jpeg" alt="">
+
+            </div>
+            <div class="divider"></div>
+            <div class="select_f">
+
+                <div class="select you">
+                    <div class="picked">You</div>
+                    <img class="you_img" src="./images/Paper.jpeg" alt="">
+
+                </div>
+                <div class="msg">
+                    <div class="message">House Won</div>
+
+                </div>
+                <div class="select house">
+                    <div class="picked">House</div>
+                    <img class="house_img" src="./images/Rock.jpeg" alt="">
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="results">
+            <div class="result">
+                <div class="result_f">
+                    <div class="name">You:</div>
+                    <div id="you">0</div>
+                </div>
+                <div class="result_f">
+                    <div class="House">House:</div>
+                    <div id="house">0</div>
+                </div>
+            </div>
+            <div class="reset_btn">New Game</div>
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>

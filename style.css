@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color:#12182B ;
+    
+    color: white;
+    text-align: center;
+    width: 100vw;
+    font-size: 1.5rem;
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100% ;
+    color: rgb(217, 206, 194);
+    background-color: #070b18;
+    box-shadow: 0 10px 30px rgb(0, 0, 0);
+}
+
+.header h1{
+    padding: 30px;
+    font-size: 4rem;
+    
+}
+
+
+.container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#12182B ;
+    box-shadow: 20px 20px 40px black;
+    border-radius: 30px;
+    margin: 100px auto;
+    padding:5px 10px;
+}
+
+.selection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 40px auto;
+    margin-bottom: 15px;
+    
+
+}
+.choices{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 40px;
+    background-color: #0C101D;
+
+    box-shadow: 6px 6px 20px black;
+    border-radius: 20px;
+}
+
+.right_border{
+    height: 100px;
+    border-right: 1px solid antiquewhite;
+    margin: 15px 5px;
+    
+    
+}
+.picked_choice{
+    display: flex;
+    height: 90%;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 15px 20px;
+    background-color: #000000;
+    color: white;
+    box-shadow: 4px 6px 6px #171717;
+    border-radius: 15px;
+    /* border: 2px solid antiquewhite; */
+    font-weight: bold;
+    margin: 20px;
+}
+.choice_img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+}
+.select_f{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    /* margin: 40px; */
+    box-shadow: 6px 6px 20px black;
+    border-radius: 20px;
+    background-color: #0C101D;
+    display: none;
+}
+.select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    
+
+}
+.picked{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    background-color: #000000;
+    color: white;
+    box-shadow: 4px 6px 6px #171717;
+    border-radius: 15px;
+    /* border: 2px solid antiquewhite; */
+    font-weight: bold;
+    margin: 20px;
+}
+img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 20px;
+    transition: box-shadow 0.5s ease-in, border 0.8s ease-out;
+
+}
+.win{
+    border: 2px solid antiquewhite;
+    box-shadow: 10px 10px 40px 10px #1e42c5;
+}
+.msg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+   
+}
+.message{
+    font-size: 2.2rem;
+    padding: 10px 30px;
+    background-color: #faedcd;
+    color: black;
+    box-shadow: 0px 4px 12px #181818;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: 20px;
+ 
+
+}
+.continue_btn{
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    background-color: #000000;
+    color: white;
+    box-shadow: 4px 4px 8px #000000;
+    border-radius: 15px;
+    border: 2px solid antiquewhite;
+    font-weight: bold;
+    margin: 20px;
+    cursor: pointer;
+
+}
+
+.clicked {
+    box-shadow: 6px 6px 6px rgb(0, 0, 0) inset;
+    background-color: #303030;
+
+}
+
+
+.divider{
+    width: 80%;
+    margin: 0 auto;
+    height: 0.2px;
+    background-color: #eee9e9;
+    margin: 30px;
+    margin-bottom: 60px;
+
+}
+
+.results{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 15px auto;
+    margin-bottom: 40px;
+    background-color: #0C101D;
+    box-shadow: 6px 6px 8px black;
+    border-radius: 25px;
+    margin: 30px auto;
+    padding: 10px 20px;
+}
+
+
+.result{
+
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+.result_f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    padding: 10px 30px;
+    background-color: #faedcd;
+    
+    color: black;
+    box-shadow: 0px 4px 12px #181818;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: 20px;
+}
+.reset_btn{
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    background-color: #000000;
+    color: white;
+    box-shadow: 4px 4px 8px #000000;
+    border: 2px solid antiquewhite;
+
+    border-radius: 15px;
+    font-weight: bold;
+    margin: 20px;
+    cursor: pointer;
+
+}
