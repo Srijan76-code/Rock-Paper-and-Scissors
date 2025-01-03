@@ -61,12 +61,12 @@ function houseBoxShadow() {
 function updateResults(rand_num,value){
     if ( value==rand_num) {
         Match_tied_sound.play();
-        message.innerHTML="Match Tied";
+        message.innerHTML="Tied!";
     }
     if (value==1 && rand_num==2){
         
         victory_sound.play();
-        message.innerHTML="You Won";
+        message.innerHTML="VICTORY";
         youBoxShadow();
         
 
@@ -74,21 +74,21 @@ function updateResults(rand_num,value){
     }
     if (value==1 && rand_num==3){
         gameover_sound.play();
-        message.innerHTML="House Won";
+        message.innerHTML="GAME OVER!";
         houseBoxShadow();
         house_value.innerHTML=Number(house_value.innerHTML) + 1;
 
     }
     if (value==2 && rand_num==1){
         gameover_sound.play();
-        message.innerHTML="House Won";
+        message.innerHTML="GAME OVER!";
         houseBoxShadow();
         house_value.innerHTML=Number(house_value.innerHTML) + 1;
 
     }
     if (value==2 && rand_num==3){
         victory_sound.play();
-        message.innerHTML="You Won";
+        message.innerHTML="VICTORY";
         youBoxShadow();
 
         you_img.style.boxShadow="10px 10px 40px 10px #1e42c5";
@@ -97,13 +97,13 @@ function updateResults(rand_num,value){
     }
     if (value==3 && rand_num==2){
         gameover_sound.play();
-        message.innerHTML="House Won";
+        message.innerHTML="GAME OVER!";
         houseBoxShadow();
         house_value.innerHTML=Number(house_value.innerHTML) + 1;
     }
     if (value==3 && rand_num==1){
         victory_sound.play();
-        message.innerHTML="You Won";
+        message.innerHTML="VICTORY";
         youBoxShadow();
 
         you_img.style.boxShadow="10px 10px 40px 10px #1e42c5";
